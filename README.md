@@ -1,5 +1,7 @@
 # Online Retail Exploratory Data Analysis with Python
 
+> 📊 **Presentation Available**: [View EDA Summary Slides (Canva)](https://www.canva.com/design/DAGlO5r_JU8/sIUWNNKbRfKGnFoJ_S-SyQ/edit?utm_content=DAGlO5r_JU8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 Welcome to my portfolio project where I performed Exploratory Data Analysis (EDA) on a real-world online retail dataset using Python. The goal of this project was to uncover key business insights, identify customer behavior patterns, and provide actionable recommendations for decision-making.
 
 ## Overview
@@ -32,33 +34,32 @@ It contains 541,909 rows and 8 features:
 
 ### 1. Data Cleaning
 - Removed 5,268 duplicate rows
-- Dropped records with missing `CustomerID` or `Description` (over 135,000 rows)
-- Created a clean dataset of 401,604 rows
+- Dropped records with missing `CustomerID` or `Description`
+- Cleaned dataset has 401,604 valid transactions
 - Handled zero unit prices and negative quantities (returns)
 
 ### 2. Descriptive Statistics
 - Identified skewness in `Quantity` and `UnitPrice` due to extreme outliers
-- Highlighted the need for median-based metrics for typical transaction analysis
+- Median values were more representative of typical transactions
 
 ### 3. Data Visualization
-- Histograms, boxplots, and bar charts to analyze:
-  - Quantity and price distributions
-  - Monthly and weekday sales trends
-  - Top-selling products and countries
-  - Most returned products
+- Histograms and boxplots to analyze distributions
+- Line and bar charts for time-series trends
+- Bar plots for top-selling products and countries
+- Return analysis via most frequently returned items
 
 ### 4. Time-Based Analysis
-- **Peak Sales:** Observed in Q4 (especially November)
-- **Slow Months:** February and April
-- **No Saturday Data:** Likely due to data collection issue or business operations
+- **Peak Sales:** Q4, especially November
+- **Low Sales Periods:** February and April
+- **Missing Saturday Data:** Possibly a logging or operational issue
 
 ### 5. Top Performers
 - **Best-Selling Product:** `PAPER CRAFT , LITTLE BIRDIE` (80,995 units)
-- **Top Countries (excluding UK):** Netherlands, Ireland (EIRE), Germany, France
+- **Top Countries (Excl. UK):** Netherlands, Ireland (EIRE), Germany, France
 
 ### 6. Outliers and Anomalies
-- Found outliers with quantities over 80,000 and prices up to £38,970
-- Discussed their potential impact on mean, visualizations, and business interpretations
+- Found significant outliers in quantities (up to 80,000) and prices (up to £38,970)
+- Discussed their impact on average statistics and visualizations
 
 ## Tools Used
 
@@ -71,10 +72,11 @@ It contains 541,909 rows and 8 features:
 
 ## Insights & Recommendations
 
-- **Maximize Q4 Opportunities:** Invest more in marketing and inventory ahead of holiday season
-- **Improve Data Logging:** Investigate missing Saturday sales data
-- **Monitor High-Return Products:** Assess quality issues with frequently returned items
-- **Refine Data Cleaning Practices:** For more reliable metrics and reporting
+- **Maximize Q4 Opportunities:** Optimize marketing/inventory ahead of peak season
+- **Investigate Data Gaps:** Missing Saturdays should be explored further
+- **Analyze High Return Items:** Monitor customer feedback and product quality
+- **Enhance Data Integrity:** Apply better validation on quantity and pricing fields
+- **Capitalize on International Markets:** Focus on strong-performing regions like the Netherlands and Germany
 
 ## How to Run
 
